@@ -2,8 +2,8 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "SwiftFlow - The No Code Swift Editor" },
+    { name: "SwiftFlow", content: "The world's first No Code editor for Swift!" },
   ];
 };
 
