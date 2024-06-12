@@ -55,19 +55,21 @@ const featureSections: FeatureSectionProps[] = [
   },
   {
     mode: 'secondary',
-    title: "Advanced Features",
+    title: "Advanced Logic\nMade Easy.",
     heading: "purple",
-    description: "Dive into the advanced features for experienced users.",
-    subheading: "Advanced Editor",
-    sectionIcon: "advanced-icon.svg",
-    altText: "Advanced Features",
+    description: "Construct and visualize app logic in a user-friendly, drag-and-drop interface. From defining user interactions to creating conditions, managing state changes, and setting up complex sequences, everything is done visually. The power to shape how your app responds and behaves is now at your fingertips.",
+    subheading: "Logic Workflows",
+    sectionIcon: "logic-workflows-light.svg",
+    sectionIconDark: "logic-workflows-dark.svg",
+    altText: "Logic Workflows Icon",
     featureDetails: [
       {
         mode: 'primary',
-        title: 'Code Preview',
-        description: 'See the live preview of your code as you type.',
-        imgSrc: 'preview-icon.svg',
-        altText: 'test'
+        title: 'No Code Actions',
+        description: 'Unlock the full potential of your app with No Code Action Modules. Seamlessly trigger actions and automate workflows with ease, all without writing a single line of code. Experience the power of advanced functionality, simplified.',
+        imgSrc: 'no-code-actions-light.svg',
+        imgSrcDark: 'no-code-actions-dark.svg',
+        altText: 'Group of cards showing available action modifiers'
       },
       {
         mode: 'primary',

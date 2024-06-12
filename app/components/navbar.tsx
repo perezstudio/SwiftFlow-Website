@@ -4,11 +4,11 @@ import { Link } from "@remix-run/react";
 
 export default function NavBar() {
   return (
-	<nav className="bg-custom-light-gray dark:bg-custom-dark">
-	  <div className="max-w-1200 mx-auto">
-		<div className="relative flex items-center justify-between h-16">
-		  <div className="absolute inset-y-0 left-0 flex flex-row gap-0.5">
-			<Link to="/" className="flex items-center">
+	<nav className="bg-custom-light-gray dark:bg-custom-dark py-2.5 px-2 flex flex-row justify-center">
+	  <div className="max-w-1200 mx-auto w-full">
+		<div className="relative flex items-center justify-between">
+		  <div className="absolute inset-y-0 left-0 flex flex-row">
+			<Link to="/" className="flex flex-row items-center gap-2">
 			  <img
 				className="h-8 w-auto"
 				src="app-icon.svg" // Replace with your logo path
@@ -17,29 +17,27 @@ export default function NavBar() {
 			  <span className="text-xl font-semibold">SwiftFlow</span>
 			</Link>
 		  </div>
-		  <div className="flex flex-grow items-center justify-end sm:items-stretch justify-end">
-			<div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+		  <div className="flex flex-grow items-center justify-end sm:items-stretch text-sm font-medium">
+			<div className="flex flex-row gap-6">
 			  <Link
 				to="/overview"
-				className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium"
+				className="inline-flex items-center"
 			  >
 				Overview
 			  </Link>
 			  <Link
 				to="/blog"
-				className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium"
+				className="inline-flex items-center"
 			  >
 				Blog
 			  </Link>
-			</div>
-			<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-				<Link
+			  <Link
 				  to="/waitlist"
-				  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+				  className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-custom-primary hover:bg-custom-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary"
 				>
-				  Join The Waitlist
-				</Link>
-			  </div>
+				Join The Waitlist
+			    </Link>
+			</div>
 		  </div>
 		</div>
 	  </div>

@@ -59,7 +59,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ mode, title, heading, d
 				<h2 className={`${baseHeading} ${selectedHeading}`}>{processText(title)}</h2>
 				<p className='max-w-xl'>{description}</p>
 			</div>
-			<div className='grid grid-cols-2 gap-8'>
+			<div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
 				{featureDetails.map((feature, index) => (
 				  <FeatureCard
 					key={index}
