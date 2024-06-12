@@ -9,7 +9,7 @@ import type { LinksFunction } from "@remix-run/node";
 import NavBar from "./components/navbar";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: "/styles/tailwind.css" },
+  { rel: "stylesheet", href: "/styles/tailwind.css" }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
