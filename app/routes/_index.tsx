@@ -18,10 +18,17 @@ const featureSections: FeatureSectionProps[] = [
     altText: "Visual Editor Icon",
     featureDetails: [
       {
-        mode: 'primary',
+        mode: 'secondary',
         title: 'Drag ‘n Drop',
         description: 'Experience the simplicity of app creation with our drag-and-drop feature.',
         imgSrc: 'app-icon.svg',
+        altText: 'test'
+      },
+      {
+        mode: 'secondary',
+        title: 'Customizable Templates',
+        description: 'Choose from a variety of customizable templates to jumpstart your project.',
+        imgSrc: 'template-icon.svg',
         altText: 'test'
       },
       {
@@ -49,7 +56,7 @@ const featureSections: FeatureSectionProps[] = [
         altText: 'test'
       },
       {
-        mode: 'secondary',
+        mode: 'primary',
         title: 'Real-time Collaboration',
         description: 'Work with your team in real-time with our collaboration tools.',
         imgSrc: 'collab-icon.svg',

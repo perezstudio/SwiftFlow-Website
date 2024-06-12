@@ -11,10 +11,19 @@ export interface FeatureSectionProps {
 }
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({ mode, title, description, subheading, sectionIcon, altText, featureDetails }) => {
+	const baseStyles = 'flex flex-row max-w-full justify-center px-8 py-16';
+	
+	const modeStyles = {
+		primary: 'bg-custom-light-gray dark:bg-custom-dark',
+		secondary: 'bg-white dark:bg-black',
+	  };
+	
+	const selectedMode = modeStyles[mode];
+	
   return (
-	<div>
-		<div>
-			<div>
+	<div className={`${baseStyles} ${selectedMode}`}>
+		<div className='max-w-1200 w-full'>
+			<div className='px-8'>
 				<div>
 					<img
 						className="h-8 w-auto"
@@ -24,9 +33,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ mode, title, descriptio
 					<span>{subheading}</span>
 				</div>
 				<h2>{title}</h2>
-				<p>{description}</p>
+				<p className='max-w-xl'>{description}</p>
 			</div>
-			<div>
+			<div className='grid grid-cols-2 gap-8'>
 				{featureDetails.map((feature, index) => (
 				  <FeatureCard
 					key={index}
