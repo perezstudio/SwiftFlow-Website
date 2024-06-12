@@ -1,0 +1,8 @@
+{
+  "editor.default_syntax" : "tsx",
+  "workspace.color" : 1,
+  "workspace.name" : "Swift Flow Website",
+  "workspace.preview_server_port" : 5173,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:5173\/"
+}
