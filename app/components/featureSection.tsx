@@ -1,6 +1,16 @@
+import FeatureCard, { FeatureCardProps } from './featureCard'
 
+export interface FeatureSectionProps {
+  mode: 'primary' | 'secondary';
+  title: string;
+  description: string;
+  subheading: string;
+  sectionIcon: string;
+  altText: string;
+  featureDetails: FeatureCardProps[];
+}
 
-export default function Index() {
+const FeatureSection: React.FC<FeatureSectionProps> = ({ mode, title, description, subheading, sectionIcon, altText, featureDetails }) => {
   return (
 	<div>
 		<div>
@@ -8,18 +18,29 @@ export default function Index() {
 				<div>
 					<img
 						className="h-8 w-auto"
-						src="app-icon.svg"
-						alt="SwiftFlow Logo"
+						src={sectionIcon}
+						alt={altText}
 					/>
-					<span>Visual Editor</span>
+					<span>{subheading}</span>
 				</div>
-				<h2>Build Visually. Swift at its heart.</h2>
-				<p>Immerse yourself in a new era of app building with our visual editor, while staying true to the core of Swift. Design your app in a user-friendly, visual environment, making it easy to piece together your perfect user interface. But beneath that visual simplicity, the power of Swift and SwiftUI is at work, ensuring your app is robust, efficient, and ready to deliver a top-notch user experience. Bring your ideas to life through the power of visuals while harnessing the strength of Swift!</p>
+				<h2>{title}</h2>
+				<p>{description}</p>
 			</div>
 			<div>
-				
+				{featureDetails.map((feature, index) => (
+				  <FeatureCard
+					key={index}
+					mode={feature.mode}
+					title={feature.title}
+					description={feature.description}
+					imgSrc={feature.imgSrc}
+					altText={feature.altText}
+				  />
+				))}
 			</div>
 		</div>
 	</div>
   );
 }
+
+export default FeatureSection;
