@@ -73,24 +73,71 @@ const featureSections: FeatureSectionProps[] = [
       },
       {
         mode: 'primary',
-        title: 'Real-time Collaboration',
-        description: 'Work with your team in real-time with our collaboration tools.',
-        imgSrc: 'collab-icon.svg',
-        altText: 'test'
+        title: 'Conditional Logic',
+        description: 'Design sophisticated actions and workflows effortlessly with our intuitive drag-and-drop interface. It empowers you to create powerful app logic without any coding, transforming your ideas into reality with unparalleled simplicity.',
+        imgSrc: 'conditional-logic-light.svg',
+        imgSrcDark: 'conditional-logic-dark.svg',
+        altText: 'Visual Workflow for User login'
       },
       {
         mode: 'primary',
-        title: 'Real-time Collaboration',
-        description: 'Work with your team in real-time with our collaboration tools.',
-        imgSrc: 'collab-icon.svg',
-        altText: 'test'
+        title: 'Visual Debugger',
+        description: 'Transform troubleshooting with clear error messages and intelligent suggestions. Seamlessly identify and resolve issues, ensuring your app performs flawlessly. Experience debugging reimagined, with precision and simplicity at your fingertips.',
+        imgSrc: 'visual-debugger-light.svg',
+        imgSrcDark: 'visual-debugger-dark.svg',
+        altText: 'Error messages available in visual debugger'
       },
       {
         mode: 'primary',
-        title: 'Real-time Collaboration',
-        description: 'Work with your team in real-time with our collaboration tools.',
-        imgSrc: 'collab-icon.svg',
-        altText: 'test'
+        title: 'Developer Friendly',
+        description: 'Enjoy the freedom to add custom Swift code and effortlessly export your project. Whether you’re a seasoned developer or just starting out, enjoy the flexibility to fine-tune your app and integrate it into larger projects, all while maintaining a streamlined workflow.',
+        imgSrc: 'developer-friendly-light.svg',
+        imgSrcDark: 'developer-friendly-dark.svg',
+        altText: 'App struct that was exported from SwiftFlow'
+      },
+    ],
+  },
+  {
+    mode: 'primary',
+    title: "Connect, Customize & Build\nwith Your Own Backend.",
+    heading: "teal",
+    description: "No more concerns about compatibility or data-transfer hassles - simply integrate your backend, customize your data inputs and outputs, and build your app to perfectly fit your unique needs. Whether it's a complex business application or a simple hobby project, enjoy the freedom to design your app around your own data infrastructure. Take command of your data and build the app you've always envisioned!",
+    subheading: "Data Source",
+    sectionIcon: "data-source-light.svg",
+    sectionIconDark: "data-source-dark.svg",
+    altText: "Data Source Icon",
+    featureDetails: [
+      {
+        mode: 'secondary',
+        title: 'No Code Actions',
+        description: 'Unlock the full potential of your app with No Code Action Modules. Seamlessly trigger actions and automate workflows with ease, all without writing a single line of code. Experience the power of advanced functionality, simplified.',
+        imgSrc: 'no-code-actions-light.svg',
+        imgSrcDark: 'no-code-actions-dark.svg',
+        altText: 'Group of cards showing available action modifiers'
+      },
+      {
+        mode: 'secondary',
+        title: 'Conditional Logic',
+        description: 'Design sophisticated actions and workflows effortlessly with our intuitive drag-and-drop interface. It empowers you to create powerful app logic without any coding, transforming your ideas into reality with unparalleled simplicity.',
+        imgSrc: 'conditional-logic-light.svg',
+        imgSrcDark: 'conditional-logic-dark.svg',
+        altText: 'Visual Workflow for User login'
+      },
+      {
+        mode: 'secondary',
+        title: 'Visual Debugger',
+        description: 'Transform troubleshooting with clear error messages and intelligent suggestions. Seamlessly identify and resolve issues, ensuring your app performs flawlessly. Experience debugging reimagined, with precision and simplicity at your fingertips.',
+        imgSrc: 'visual-debugger-light.svg',
+        imgSrcDark: 'visual-debugger-dark.svg',
+        altText: 'Error messages available in visual debugger'
+      },
+      {
+        mode: 'secondary',
+        title: 'Developer Friendly',
+        description: 'Enjoy the freedom to add custom Swift code and effortlessly export your project. Whether you’re a seasoned developer or just starting out, enjoy the flexibility to fine-tune your app and integrate it into larger projects, all while maintaining a streamlined workflow.',
+        imgSrc: 'developer-friendly-light.svg',
+        imgSrcDark: 'developer-friendly-dark.svg',
+        altText: 'App struct that was exported from SwiftFlow'
       },
     ],
   },
