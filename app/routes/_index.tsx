@@ -22,32 +22,34 @@ const featureSections: FeatureSectionProps[] = [
       {
         mode: 'secondary',
         title: 'Drag ‘n Drop',
-        description: 'Experience the simplicity of app creation with our drag-and-drop feature.',
+        description: 'With our intuitive drag-and-drop feature, designing your dream app is as simple as selecting, dragging, and dropping components onto your canvas. No coding required. Just pure creativity.',
         imgSrc: 'drag-n-drop-light.svg',
         imgSrcDark: 'drag-n-drop-dark.svg',
-        altText: "Drag 'n Drop Image"
+        altText: "File Manager showing list of available views & models"
       },
       {
         mode: 'secondary',
-        title: 'Customizable Templates',
-        description: 'Choose from a variety of customizable templates to jumpstart your project.',
+        title: 'Components',
+        description: 'Design and customize your own UI elements, creating reusable custom-made views that give you unparalleled control over your app’s look and feel.',
         imgSrc: 'components-light.svg',
         imgSrcDark: 'components-dark.svg',
-        altText: 'Components Image'
+        altText: 'User List Item Card Component'
       },
       {
         mode: 'secondary',
-        title: 'Customizable Templates',
-        description: 'Choose from a variety of customizable templates to jumpstart your project.',
-        imgSrc: 'template-icon.svg',
-        altText: 'test'
+        title: 'Build to Major Platforms',
+        description: 'Tailor your UI elements and functionality to the specific features of each platform without worrying about the intricacies of coding for different devices. Enter the broad universe of Apple users and let your app shine on any screen, any size, any platform.',
+        imgSrc: 'platforms-light.svg',
+        imgSrcDark: 'platforms-dark.svg',
+        altText: 'Mac, iPad, & iPhone showing app built on SwiftFlow'
       },
       {
         mode: 'secondary',
-        title: 'Customizable Templates',
-        description: 'Choose from a variety of customizable templates to jumpstart your project.',
-        imgSrc: 'template-icon.svg',
-        altText: 'test'
+        title: 'Export SwiftUI Code',
+        description: 'Once your no-code design is complete, seamlessly export your project into clean, reusable SwiftUI code. Perfect for developers of all levels, this feature allows you to further refine, enhance, and integrate your app into larger projects – ready for the App Store.',
+        imgSrc: 'code-editor-light.svg',
+        imgSrcDark: 'code-editor-dark.svg',
+        altText: 'Code editor showing a basic app struct with the Content View inside of the struct'
       },
     ],
   },
