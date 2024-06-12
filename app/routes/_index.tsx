@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";import Header from "~/components/header";
 import FeatureSection, { FeatureSectionProps } from "~/components/featureSection";
+import CallToAction from "~/components/callToAction";
 
 export const meta: MetaFunction = () => {
   return [
@@ -150,6 +151,7 @@ export default function Index() {
       {featureSections.map((section, index) => (
         <FeatureSection key={index} {...section} />
       ))}
+      <CallToAction />
     </div>
   );
 }
