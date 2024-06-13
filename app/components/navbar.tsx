@@ -31,7 +31,8 @@ export default function NavBar() {
                 Blog
               </Link>
               <Link
-                to="/waitlist"
+                to="https://forms.fillout.com/t/cgHByMYWPXus"
+                target="_blank"
                 className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-gradient-to-b from-custom-primary to-custom-secondary hover:bg-custom-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary"
               >
                 Join The Waitlist
@@ -62,7 +63,11 @@ export default function NavBar() {
             <Link to="/blog" className="py-2 slide-in-2">
               Blog
             </Link>
-            <Link to="/waitlist" className="py-2 slide-in-3">
+            <Link
+              to="https://forms.fillout.com/t/cgHByMYWPXus"
+              target="_blank"
+              className="py-2 slide-in-3"
+            >
               Join The Waitlist
             </Link>
           </div>
