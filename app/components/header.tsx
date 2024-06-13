@@ -31,15 +31,19 @@ export default function Header() {
             Generates clean, semantic Swift UI code in a visual and responsive
             canvas that’s ready to publish or hand to developers.
           </p>
-          <Link to="/" className="flex items-center">
+          <Link
+            to="https://forms.fillout.com/t/cgHByMYWPXus"
+            target="_blank"
+            className="flex flex-row items-center gap-2"
+          >
             <span className="text-lg font-semibold text-custom-primary">
               Join The Waitlist
             </span>
-            {/* <img
-			className="h-8 w-auto"
-			src="app-icon.svg" // Replace with your logo path
-			alt="SwiftFlow Logo"
-			/> */}
+            <img
+              className="w-auto"
+              src="waitlist-icon-color.svg" // Replace with your logo path
+              alt="Waitlist Icon"
+            />
           </Link>
         </div>
         <div>

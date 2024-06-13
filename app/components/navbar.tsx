@@ -33,9 +33,14 @@ export default function NavBar() {
               <Link
                 to="https://forms.fillout.com/t/cgHByMYWPXus"
                 target="_blank"
-                className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-gradient-to-b from-custom-primary to-custom-secondary hover:bg-custom-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary"
+                className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-custom-primary hover:bg-custom-primary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary items-center gap-2"
               >
                 Join The Waitlist
+                <img
+                  className="w-auto"
+                  src="waitlist-icon-white.svg" // Replace with your logo path
+                  alt="Waitlist Icon"
+                />
               </Link>
             </div>
             <div className="md:hidden flex items-center">
