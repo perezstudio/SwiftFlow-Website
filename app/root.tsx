@@ -24,7 +24,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="bg-white dark:bg-black text-custom-dark dark:text-white">
         <NavBar />
-        {children}
+        <div className="pt-16">
+          {children}
+        </div>
         <ScrollRestoration />
         <Scripts />
         <Footer />

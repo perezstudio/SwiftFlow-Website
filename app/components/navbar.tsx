@@ -1,46 +1,73 @@
-// app/components/NavBar.jsx
-
+import React, { useState } from "react";
 import { Link } from "@remix-run/react";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-	<nav className="bg-custom-light-gray dark:bg-custom-dark py-2.5 px-2 flex flex-row justify-center">
-	  <div className="max-w-1200 mx-auto w-full">
-		<div className="relative flex items-center justify-between">
-		  <div className="absolute inset-y-0 left-0 flex flex-row">
-			<Link to="/" className="flex flex-row items-center gap-2">
-			  <img
-				className="h-8 w-auto"
-				src="app-icon.svg" // Replace with your logo path
-				alt="SwiftFlow Logo"
-			  />
-			  <span className="text-xl font-semibold">SwiftFlow</span>
-			</Link>
-		  </div>
-		  <div className="flex flex-grow items-center justify-end sm:items-stretch text-sm font-medium">
-			<div className="flex flex-row gap-6">
-			  <Link
-				to="/overview"
-				className="inline-flex items-center"
-			  >
-				Overview
-			  </Link>
-			  <Link
-				to="/blog"
-				className="inline-flex items-center"
-			  >
-				Blog
-			  </Link>
-			  <Link
-				  to="/waitlist"
-				  className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-custom-primary hover:bg-custom-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary"
-				>
-				Join The Waitlist
-			    </Link>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</nav>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-custom-light-gray/70 dark:bg-custom-dark/70 py-2.5 px-8 flex flex-col justify-center backdrop-blur-lg gap-4">
+      <div className="max-w-1200 mx-auto w-full">
+        <div className="relative flex items-center justify-between">
+          <div className="absolute inset-y-0 left-0 flex flex-row">
+            <Link to="/" className="flex flex-row items-center gap-2">
+              <img
+                className="h-8 w-auto"
+                src="app-icon.svg" // Replace with your logo path
+                alt="SwiftFlow Logo"
+              />
+              <span className="text-xl font-semibold">SwiftFlow</span>
+            </Link>
+          </div>
+          <div className="flex flex-grow items-center justify-end sm:items-stretch text-sm font-medium">
+            <div className="hidden md:flex md:flex-row gap-6">
+              <Link to="/" className="inline-flex items-center">
+                Overview
+              </Link>
+              <Link to="/blog" className="inline-flex items-center">
+                Blog
+              </Link>
+              <Link
+                to="/waitlist"
+                className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-gradient-to-b from-custom-primary to-custom-secondary hover:bg-custom-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary"
+              >
+                Join The Waitlist
+              </Link>
+            </div>
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={toggleMenu}
+                className="flex flex-col space-y-1.5 p-4 focus:outline-none"
+              >
+                <span
+                  className={`block w-6 h-0.5 bg-black dark:bg-white rounded-full transform transition duration-300 ${isOpen ? "rotate-45 translate-y-1" : ""}`}
+                ></span>
+                <span
+                  className={`block w-6 h-0.5 bg-black dark:bg-white rounded-full transform transition duration-300 ${isOpen ? "-rotate-45 -translate-y-1" : ""}`}
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="md:hidden transition-transform duration-300">
+          <div className="flex flex-col gap-4 py-4 text-2xl font-font-semibold">
+            <Link to="/" className="py-2 stagger-1">
+              Overview
+            </Link>
+            <Link to="/blog" className="py-2 stagger-2">
+              Blog
+            </Link>
+            <Link to="/waitlist" className="py-2 stagger-3">
+              Join The Waitlist
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 }
