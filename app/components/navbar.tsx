@@ -54,15 +54,15 @@ export default function NavBar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden transition-transform duration-300">
+        <div className="md:hidden">
           <div className="flex flex-col gap-4 py-4 text-2xl font-font-semibold">
-            <Link to="/" className="py-2 stagger-1">
+            <Link to="/" className="py-2 slide-in-1">
               Overview
             </Link>
-            <Link to="/blog" className="py-2 stagger-2">
+            <Link to="/blog" className="py-2 slide-in-2">
               Blog
             </Link>
-            <Link to="/waitlist" className="py-2 stagger-3">
+            <Link to="/waitlist" className="py-2 slide-in-3">
               Join The Waitlist
             </Link>
           </div>

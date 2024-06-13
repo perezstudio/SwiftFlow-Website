@@ -14,30 +14,14 @@
   }
 }
 
-.slide-in {
-  animation: slideIn 4s ease-out forwards;
+/* Staggered slide-in classes */
+.slide-in-1 {
+  animation: slideIn 0.3s forwards;
 }
-
-/* Staggered animation */
-@keyframes stagger {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.slide-in-2 {
+  animation: slideIn 0.3s forwards;
 }
-
-.stagger-1 {
-  animation: stagger 0.3s ease-out 0.1s forwards;
+.slide-in-3 {
+  animation: slideIn 0.3s forwards;
 }
-
-.stagger-2 {
-  animation: stagger 0.6s ease-out 0.2s forwards;
-}
-
-.stagger-3 {
-  animation: stagger 1.2s ease-out 0.3s forwards;
-}
+/* Add more staggered classes as needed */
