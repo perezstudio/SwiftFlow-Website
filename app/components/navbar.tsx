@@ -65,9 +65,9 @@ export default function NavBar() {
             <Link to="/" className="py-2 slide-in-1">
               Overview
             </Link>
-            <Link to="/blog" className="py-2 slide-in-2">
+            {/* <Link to="/blog" className="py-2 slide-in-2">
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="https://forms.fillout.com/t/cgHByMYWPXus"
               target="_blank"
