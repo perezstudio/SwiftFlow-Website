@@ -25,7 +25,7 @@ export default function Header() {
             <span className="text-2xl font-semibold">SwiftFlow</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-semibold text-center max-w-3xl">
-            Levarage the Power of Swift Through a Visual Platform
+            Leverage the Power of Swift Through a Visual Platform
           </h1>
           <p className="text-center max-w-lg">
             Generates clean, semantic Swift UI code in a visual and responsive
