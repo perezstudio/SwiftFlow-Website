@@ -22,7 +22,10 @@ const posts = [
   {
     id: "1",
     slug: "my-first-post",
+    type: "image",
+    category: "Update",
     title: "My First Post",
+    date: "Jun 18th 2024",
     markdown: `
   # This is my first post
   
@@ -35,7 +38,10 @@ const posts = [
   {
     id: "2",
     slug: "90s-mixtape",
+    type: "image",
+    category: "Update",
     title: "A Mixtape I Made Just For You",
+    date: "Jun 18th 2024",
     markdown: `
   # 90s Mixtape
   
@@ -58,8 +64,41 @@ const posts = [
   - C'mon N' Ride it (Quad City DJ's)
       `.trim(),
     banner: "start-banner.png",
-    thumbnail: "thumbnail-banner.png",
+    thumbnail: "start-banner-thumbnail.png",
     excerpt: "testing the excerpt update",
+  },
+  {
+    id: "3",
+    slug: "video-test",
+    type: "video",
+    category: "Update",
+    title: "My first video",
+    date: "Jun 18th 2024",
+    markdown: `
+  # 90s Mixtape
+  
+  - I wish (Skee-Lo)
+  - This Is How We Do It (Montell Jordan)
+  - Everlong (Foo Fighters)
+  - Ms. Jackson (Outkast)
+  - Interstate Love Song (Stone Temple Pilots)
+  - Killing Me Softly With His Song (Fugees, Ms. Lauryn Hill)
+  - Just a Friend (Biz Markie)
+  - The Man Who Sold The World (Nirvana)
+  - Semi-Charmed Life (Third Eye Blind)
+  - ...Baby One More Time (Britney Spears)
+  - Better Man (Pearl Jam)
+  - It's All Coming Back to Me Now (Céline Dion)
+  - This Kiss (Faith Hill)
+  - Fly Away (Lenny Kravits)
+  - Scar Tissue (Red Hot Chili Peppers)
+  - Santa Monica (Everclear)
+  - C'mon N' Ride it (Quad City DJ's)
+      `.trim(),
+    banner: "start-banner.png",
+    thumbnail: "start-banner-thumbnail.png",
+    excerpt: "testing the excerpt update",
+    videoUrl: "ealb8GehmsE",
   },
 ];
 
