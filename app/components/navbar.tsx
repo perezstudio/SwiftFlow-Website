@@ -24,12 +24,12 @@ export default function NavBar() {
           </div>
           <div className="flex flex-grow items-center justify-end sm:items-stretch text-sm font-medium">
             <div className="hidden md:flex md:flex-row gap-6">
-              {/* <Link to="/" className="inline-flex items-center">
+              <Link to="/" className="inline-flex items-center">
                 Overview
-              </Link> */}
-              {/* <Link to="/blog" className="inline-flex items-center">
+              </Link>
+              <Link to="/posts" className="inline-flex items-center">
                 Blog
-              </Link> */}
+              </Link>
               <Link
                 to="https://forms.fillout.com/t/cgHByMYWPXus"
                 target="_blank"
@@ -38,7 +38,7 @@ export default function NavBar() {
                 Join The Waitlist
                 <img
                   className="w-auto"
-                  src="waitlist-icon-white.svg" // Replace with your logo path
+                  src="waitlist-icon-white.svg"
                   alt="Waitlist Icon"
                 />
               </Link>
@@ -65,9 +65,9 @@ export default function NavBar() {
             <Link to="/" className="py-2 slide-in-1">
               Overview
             </Link>
-            {/* <Link to="/blog" className="py-2 slide-in-2">
+            <Link to="/posts" className="py-2 slide-in-2">
               Blog
-            </Link> */}
+            </Link>
             <Link
               to="https://forms.fillout.com/t/cgHByMYWPXus"
               target="_blank"
