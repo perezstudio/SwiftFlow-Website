@@ -24,12 +24,12 @@ export default function NavBar() {
           </div>
           <div className="flex flex-grow items-center justify-end sm:items-stretch text-sm font-medium">
             <div className="hidden md:flex md:flex-row gap-6">
-              {/* <Link to="/" className="inline-flex items-center">
+              <Link to="/" className="inline-flex items-center">
                 Overview
-              </Link> */}
-              {/* <Link to="/blog" className="inline-flex items-center">
+              </Link>
+              <Link to="/posts" className="inline-flex items-center">
                 Blog
-              </Link> */}
+              </Link>
               <Link
                 to="https://forms.fillout.com/t/cgHByMYWPXus"
                 target="_blank"

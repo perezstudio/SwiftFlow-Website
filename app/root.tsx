@@ -15,14 +15,8 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: "/styles/tailwind.css" },
 ];
 
-export const loader: LoaderFunction = async () => {
-  return {
-    gaTrackingId: "G-Y5M0S6FWR8", // Replace with your GA tracking ID
-  };
-};
-
 export function Layout({ children }: { children: React.ReactNode }) {
-  const { gaTrackingId } = useLoaderData();
+  const gaTrackingId = "G-Y5M0S6FWR8";
   return (
     <html lang="en">
       <head>
