@@ -4,6 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 import { getPost } from "~/models/post.server";
 import invariant from "tiny-invariant";
 import { marked } from "marked";
+import "~/styles/markdown.css";
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   invariant(params.slug, "params.slug is required");
@@ -17,6 +18,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 
 export default function PostSlug() {
   const { html, post } = useLoaderData<typeof loader>();
+  console.log(html);
   return (
     <main className="w-full flex flex-col items-center px-4 md:px-8">
       <div className="max-w-3xl w-full py-8 md:py-10 lg:py-20 flex flex-col gap-1 md:gap-2">
@@ -51,7 +53,7 @@ export default function PostSlug() {
           />
         )}
       </div>
-      <div className="max-w-3xl w-full py-8 md:py-10 lg:py-20">
+      <div className="max-w-3xl w-full py-8 md:py-10 lg:py-20 markdown">
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </main>
