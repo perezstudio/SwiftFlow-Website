@@ -38,7 +38,7 @@ export default function NavBar() {
                 Join The Waitlist
                 <img
                   className="w-auto"
-                  src="waitlist-icon-white.svg" // Replace with your logo path
+                  src="waitlist-icon-white.svg"
                   alt="Waitlist Icon"
                 />
               </Link>
