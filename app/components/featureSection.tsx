@@ -1,6 +1,6 @@
 import React from "react";
-import FeatureCard, { FeatureCardProps } from "./featureCard";
-import ImageSwitcher from "./imageSwitcher";
+import FeatureCard, { FeatureCardProps } from "~/components/featureCard";
+import ImageSwitcher from "~/components/imageSwitcher";
 
 export interface FeatureSectionProps {
   mode: "primary" | "secondary";

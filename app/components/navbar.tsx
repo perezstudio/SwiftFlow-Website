@@ -16,7 +16,7 @@ export default function NavBar() {
             <Link to="/" className="flex flex-row items-center gap-2">
               <img
                 className="h-8 w-auto"
-                src="app-icon.svg" // Replace with your logo path
+                src="/app-icon.svg" // Replace with your logo path
                 alt="SwiftFlow Logo"
               />
               <span className="text-xl font-semibold">SwiftFlow</span>
@@ -38,7 +38,7 @@ export default function NavBar() {
                 Join The Waitlist
                 <img
                   className="w-auto"
-                  src="waitlist-icon-white.svg"
+                  src="/waitlist-icon-white.svg"
                   alt="Waitlist Icon"
                 />
               </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "@remix-run/react";
-import ImageSwitcher from "./imageSwitcher";
+import ImageSwitcher from "~/components/imageSwitcher";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 const Breadcrumbs: React.FC = () => {

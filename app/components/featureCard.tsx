@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSwitcher from "./imageSwitcher";
+import ImageSwitcher from "~/components/imageSwitcher";
 
 export interface FeatureCardProps {
   mode: "primary" | "secondary";

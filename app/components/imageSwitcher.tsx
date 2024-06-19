@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ImageSwitcherProps {
   lightImgSrc: string;
@@ -6,32 +6,32 @@ interface ImageSwitcherProps {
   altText: string;
 }
 
-const ImageSwitcher: React.FC<ImageSwitcherProps> = ({ lightImgSrc, darkImgSrc, altText }) => {
+const ImageSwitcher: React.FC<ImageSwitcherProps> = ({
+  lightImgSrc,
+  darkImgSrc,
+  altText,
+}) => {
   return (
-	<div>
-	  {darkImgSrc ? (
-		<>
-		  {/* Light mode image */}
-		  <img
-			src={lightImgSrc}
-			alt={altText}
-			className="block dark:hidden"
-		  />
-		  {/* Dark mode image */}
-		  <img
-			src={darkImgSrc}
-			alt={altText}
-			className="hidden dark:block"
-		  />
-		</>
-	  ) : (
-		<img
-		  src={lightImgSrc}
-		  alt={altText}
-		  className="block"
-		/>
-	  )}
-	</div>
+    <div>
+      {darkImgSrc ? (
+        <>
+          {/* Light mode image */}
+          <img
+            src={`/${lightImgSrc}`}
+            alt={altText}
+            className="block dark:hidden"
+          />
+          {/* Dark mode image */}
+          <img
+            src={`/${darkImgSrc}`}
+            alt={altText}
+            className="hidden dark:block"
+          />
+        </>
+      ) : (
+        <img src={lightImgSrc} alt={altText} className="block" />
+      )}
+    </div>
   );
 };
 
