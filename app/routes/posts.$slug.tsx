@@ -1,3 +1,4 @@
+
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { fetchPostBySlug } from "~/utils/airtable.server";
@@ -17,7 +18,6 @@ export default function PostSlug() {
   const post = useLoaderData<BlogPost>();
 
   const contentHtml = marked(post.content);
-
   return (
     <main className="w-full flex flex-col items-center px-4 md:px-8">
       <div className="max-w-3xl w-full py-8 md:py-10 lg:py-20 flex flex-col gap-1 md:gap-2">
