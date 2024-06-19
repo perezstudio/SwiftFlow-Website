@@ -1,4 +1,3 @@
-
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { fetchPostBySlug } from "~/utils/airtable.server";

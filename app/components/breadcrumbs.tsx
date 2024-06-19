@@ -19,7 +19,7 @@ const Breadcrumbs: React.FC = () => {
                 altText="Swift Bird Icon"
               />
             </Link>
-            <ChevronRightIcon className="h-5 w-5 text-gray-500 mx-2" />
+            <ChevronRightIcon className="h-5 w-5 text-gray-500" />
             <Link to="/" className="opacity-80">
               Overview
             </Link>
