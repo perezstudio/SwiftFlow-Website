@@ -21,7 +21,7 @@ function mapRecordToBlogPost(record: Airtable.Record<any>): BlogPost {
     type: fields["Type"] as string,
     banner: fields["Banner"] as Image[],
     thumbnail: fields["Thumbnail"] as Image[],
-    video_url: fields["Video Url"] as string | undefined,
+    video_url: fields["Video ID"] as string | undefined,
   };
 }
 

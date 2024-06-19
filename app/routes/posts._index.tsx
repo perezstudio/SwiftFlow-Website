@@ -66,21 +66,3 @@ export default function Posts() {
     </main>
   );
 }
-
-// export default function Posts() {
-//   const posts = useLoaderData<BlogPost[]>();
-//
-//   return (
-//     <div>
-//       <h1>Blog Posts</h1>
-//       <ul>
-//         {posts.map((post) => (
-//           <li key={post.id}>
-//             <h2>{post.title}</h2>
-//             <p>{post.content}</p>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }

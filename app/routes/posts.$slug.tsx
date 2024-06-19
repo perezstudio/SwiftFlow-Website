@@ -2,6 +2,8 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { fetchPostBySlug } from "~/utils/airtable.server";
 import { BlogPost } from "~/types/types";
+import "~/styles/markdown.css";
+import { marked } from "marked";
 
 export const loader: LoaderFunction = async ({ params }) => {
   const post = await fetchPostBySlug(params.slug as string);
@@ -13,7 +15,8 @@ export const loader: LoaderFunction = async ({ params }) => {
 
 export default function PostSlug() {
   const post = useLoaderData<BlogPost>();
-  console.log(post);
+
+  const contentHtml = marked(post.content);
 
   return (
     <main className="w-full flex flex-col items-center px-4 md:px-8">
@@ -52,7 +55,7 @@ export default function PostSlug() {
         )}
       </div>
       <div className="max-w-3xl w-full py-8 md:py-10 lg:py-20 markdown">
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
       </div>
     </main>
   );

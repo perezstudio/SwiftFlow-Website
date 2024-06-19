@@ -1,0 +1,25 @@
+/* app/styles/markdown.css */
+.markdown h1 {
+  @apply text-4xl font-bold my-4;
+}
+.markdown h2 {
+  @apply text-3xl font-bold my-3;
+}
+.markdown h3 {
+  @apply text-2xl font-bold my-2;
+}
+.markdown p {
+  @apply text-base my-2;
+}
+.markdown ul {
+  @apply list-disc list-inside my-4;
+}
+.markdown ol {
+  @apply list-decimal list-inside my-4;
+}
+.markdown li {
+  @apply my-1;
+}
+.markdown a {
+  @apply text-blue-500 underline;
+}
