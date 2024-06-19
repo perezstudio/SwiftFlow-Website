@@ -27,7 +27,7 @@ export default function PostSlug() {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
           {post.title}
         </h1>
-        <p className="text-xl lg:text-2xl">{post.content}</p>
+        <p className="text-xl lg:text-2xl">{post.excerpt}</p>
       </div>
       <div className="max-w-1200 w-full">
         {post.type === "Video" ? (
