@@ -62,14 +62,15 @@ export default function NavBar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="flex flex-col gap-4 py-4 text-2xl font-font-semibold">
-            <Link to="/" className="py-2 slide-in-1">
+            <Link to="/" onClick={toggleMenu} className="py-2 slide-in-1">
               Overview
             </Link>
-            <Link to="/posts" className="py-2 slide-in-2">
+            <Link to="/posts" onClick={toggleMenu} className="py-2 slide-in-2">
               Blog
             </Link>
             <Link
               to="https://forms.fillout.com/t/cgHByMYWPXus"
+              onClick={toggleMenu}
               target="_blank"
               className="py-2 slide-in-3"
             >
