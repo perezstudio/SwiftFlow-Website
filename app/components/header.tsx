@@ -32,7 +32,7 @@ export default function Header() {
             canvas that’s ready to publish or hand to developers.
           </p>
           <Link
-            to="https://perez-studio.ck.page/453ee2e229"
+            to="https://forms.fillout.com/t/cgHByMYWPXus"
             target="_blank"
             className="flex flex-row items-center gap-2"
           >

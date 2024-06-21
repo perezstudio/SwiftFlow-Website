@@ -24,7 +24,7 @@ export default function CallToAction() {
           </p>
         </div>
         <Link
-          to="https://perez-studio.ck.page/453ee2e229"
+          to="https://forms.fillout.com/t/cgHByMYWPXus"
           target="_blank"
           className="flex items-center gap-2"
         >

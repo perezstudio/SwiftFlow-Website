@@ -31,7 +31,7 @@ export default function NavBar() {
                 Blog
               </Link>
               <Link
-                to="https://perez-studio.ck.page/453ee2e229"
+                to="https://forms.fillout.com/t/cgHByMYWPXus"
                 target="_blank"
                 className="px-3 py-1.5 inline-flex items-center border border-transparent rounded-full shadow-sm text-white bg-custom-primary hover:bg-custom-primary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-secondary items-center gap-2"
               >
@@ -69,7 +69,7 @@ export default function NavBar() {
               Blog
             </Link>
             <Link
-              to="https://perez-studio.ck.page/453ee2e229"
+              to="https://forms.fillout.com/t/cgHByMYWPXus"
               onClick={toggleMenu}
               target="_blank"
               className="py-2 slide-in-3"
